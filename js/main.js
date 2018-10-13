@@ -1,10 +1,10 @@
 console.log('Starting up');
 
 var gProjs = [{
-    id: "Zelig",
+    id: "zelig",
     name: "Zelig & Zelda",
     title: "Playful furniture for kids",
-    desc: "Kids chair in minimalistic yet playful design",
+    desc: "Kid's chairs in minimalistic yet playful design",
     img: "img/portfolio/small/zelig.jpg",
     url: 0,
     publishedAt: 1448693940000,
@@ -13,9 +13,9 @@ var gProjs = [{
     labels: ["funiture",
         "kids", "design"],
 }, {
-    id: "Minesweeper",
+    id: "minesweeper",
     name: "Minesweeper",
-    title: "Minesweeper",
+    title: "Minesweeper online game",
     desc: "Play beginner, intermediate and expert games of Minesweeper",
     img: "img/portfolio/small/minesweeper.jpg",
     url: "proj/minesweeper/index.html",
@@ -25,7 +25,7 @@ var gProjs = [{
     labels: ["Matrixes",
         "keyboard events"],
 }, {
-    id: "ReSymmetry",
+    id: "resymmetry",
     name: "ReSymmetry",
     title: "Mechanical Chair Prototype",
     desc: "Dynamic chair for disabled kids",
@@ -51,8 +51,8 @@ var gProjs = [{
     labels: ["storage",
         "pencil case"],
 }, {
-    id: "Puffer",
-    name: "Puffer Lunch-Bag",
+    id: "puffer",
+    name: "Insulated Lunch-Bag",
     title: "",
     desc: `DESIGNED WITH THE ZIPIT TEAM
     A series of lunch bags inspired by Down Jackets
@@ -65,10 +65,10 @@ var gProjs = [{
     labels: ["textile",
         "lunch bag"],
 }, {
-    id: "Cutlery",
+    id: "cutlery",
     name: "Cutlery",
     title: "Single-use, plastic cutlery",
-    desc: `plastic cutlery with the minimum use of plastic. 
+    desc: `Plastic cutlery with the minimum use of plastic. 
     The handles are shell-like, creating a lightweight, yet strong structure`,
     img: "img/portfolio/small/cutlery.jpg",
     url: 0,
@@ -138,7 +138,7 @@ function updateModal(projId) {
                     <div class="modal-body">
                     <!-- Project Details Go Here -->
                     <h2>${proj.name}</h2>
-                    <p class="item-intro text-muted">${proj.desc}</p>
+                    <p class="item-intro text-muted">${proj.title}</p>
                     <img class="img-fluid d-block mx-auto" src="${proj.img}" alt="">
                     <p>${proj.desc}</p>
                     <ul class="list-inline">
