@@ -129,11 +129,7 @@ function updateModal(projId) {
     strHtml += `
         <div class="modal-dialog">
             <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                <div class="rl"></div>
-                </div>
-            </div>
+           
             <div class="container">
                 <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -155,6 +151,11 @@ function updateModal(projId) {
                 </div>
                 </div>
             </div>
+            <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+            <div class="rl"></div>
+            </div>
+        </div>
             </div>
         </div>`
 
