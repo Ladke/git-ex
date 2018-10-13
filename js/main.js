@@ -131,10 +131,10 @@ function renderProjs() {
 
 function updateModal(projId) {
     var proj = getProjById(projId)
-    var loc = window.location.hostname;
+    // var loc = window.location.hostname;
     var linkBtn = `<span></span>`;
     // if (proj.url) linkBtn = `<li onclick="window.open('${loc+proj.url}')">
-    if (proj.url) linkBtn = `<li onclick="window.open('${loc+proj.url}')">
+    if (proj.url) linkBtn = `<li onclick="window.open('${proj.url}')">
         <button type="button" class="btn btn-secondary">link to project</button>
     </li>`
     var strHtml = '';
