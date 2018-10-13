@@ -1,25 +1,25 @@
 console.log('Starting up');
 
 var gProjs = [{
-    id: "sokoban",
-    name: "Sokoban",
-    title: "Better push those boxes",
-    desc: "Play beginner, intermediate and expert games of Minesweeper",
-    img: "img/portfolio/small/minesweeper.jpg",
-    url: "proj/minesweeper/index.html", 
+    id: "Zelig",
+    name: "Zelig & Zelda",
+    title: "Playful furniture for kids",
+    desc: "Kids chair in minimalistic yet playful design",
+    img: "img/portfolio/small/zelig.jpg",
+    url: 0,
     publishedAt: 1448693940000,
-    date: "May 2017",
-    category: "Web-Dev",
-    labels: ["Matrixes",
-        "keyboard events"],
+    date: "May 2007",
+    category: "Industrial Design",
+    labels: ["funiture",
+        "kids", "design"],
 }, {
     id: "Minesweeper",
     name: "Minesweeper",
     title: "Minesweeper",
     desc: "Play beginner, intermediate and expert games of Minesweeper",
-    img: "img/portfolio/small/zelig.jpg",
+    img: "img/portfolio/small/minesweeper.jpg",
     url: "proj/minesweeper/index.html",
-    date: "May 2017",
+    date: "september 2018",
     publishedAt: 1448693940000,
     category: "Web-Dev",
     labels: ["Matrixes",
@@ -30,12 +30,53 @@ var gProjs = [{
     title: "Mechanical Chair Prototype",
     desc: "Dynamic chair for disabled kids",
     img: "img/portfolio/small/resymmetry.jpg",
-    url: "proj/minesweeper/index.html",
+    url: "http://www.resymmetry.com/",
     date: "May 2017",
     publishedAt: 1448693940000,
     category: "Industrial Design",
-    labels: ["Matrixes",
-        "keyboard events"],
+    labels: ["engeneering",
+        "medical equpment"],
+}, {
+    id: "beast-box",
+    name: "Beast Box",
+    title: "Storage/Pencil Box",
+    desc: "DESIGNED WITH THE ZIPIT TEAM - A series of hard-case storage boxes ",
+    img: "img/portfolio/small/beastbox.jpg",
+    url: `https://www.amazon.com/ZIPIT-Beast-Pencil-Case-Storage/dp/B00RXHRQGY/
+    ref=sr_1_5?ie=UTF8&qid=1521915566&sr=8-5&keywords=beast%2Bbox&dpID=51Hj-VTxq
+    KL&preST=_SX300_QL70_&dpSrc=srch&th=1`,
+    date: "May 2017",
+    publishedAt: 1448693940000,
+    category: "Industrial Design",
+    labels: ["storage",
+        "pencil case"],
+}, {
+    id: "Puffer",
+    name: "Puffer Lunch-Bag",
+    title: "",
+    desc: `DESIGNED WITH THE ZIPIT TEAM
+    A series of lunch bags inspired by Down Jackets
+    The excellent properties of the isolating material helps keep the food cold`,
+    img: "img/portfolio/small/puffer.jpg",
+    url: "https://just-zipit.com/collections/lunch-bags/products/puffer-lunch-bag",
+    date: "May 2017",
+    publishedAt: 1448693940000,
+    category: "Industrial Design",
+    labels: ["textile",
+        "lunch bag"],
+}, {
+    id: "Cutlery",
+    name: "Cutlery",
+    title: "Single-use, plastic cutlery",
+    desc: `plastic cutlery with the minimum use of plastic. 
+    The handles are shell-like, creating a lightweight, yet strong structure`,
+    img: "img/portfolio/small/cutlery.jpg",
+    url: 0,
+    date: "June 2015",
+    publishedAt: 1448693940000,
+    category: "Industrial Design",
+    labels: ["plastic",
+        "industrial design"],
 }]
 
 initPage()
@@ -78,8 +119,11 @@ function renderProjs() {
 
 function updateModal(projId) {
     proj = getProjById(projId)
+    var linkBtn = `<span></span>`;
+    if (proj.url) linkBtn = `<li onclick="window.open('${proj.url}')">
+        <button type="button" class="btn btn-secondary">link to project</button>
+    </li>`
     var strHtml = '';
-
     strHtml += `
         <div class="modal-dialog">
             <div class="modal-content">
@@ -94,13 +138,13 @@ function updateModal(projId) {
                     <div class="modal-body">
                     <!-- Project Details Go Here -->
                     <h2>${proj.name}</h2>
-                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="item-intro text-muted">${proj.desc}</p>
                     <img class="img-fluid d-block mx-auto" src="${proj.img}" alt="">
                     <p>${proj.desc}</p>
                     <ul class="list-inline">
-                        <li>Date: January 2017</li>
-                        <li onclick="window.open('${proj.url}')">link to project</li>
-                        <li>Category: Illustration</li>
+                        <li>Date: ${proj.date}</li>
+                        <li>Category: ${proj.category}</li>
+                        ${linkBtn}
                     </ul>
                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                         <i class="fa fa-times"></i>
@@ -115,16 +159,16 @@ function updateModal(projId) {
     $('#portfolioModal').html(strHtml)
 }
 
-function submitForm(){
+function submitForm() {
     var email = $('#FormEmailInput1').val();
     var subject = $('#FormSubjectTextarea1').val();
     var message = $('#FormMessageTextarea1').val();
     var strContaceForm = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${message}`
-    clearForm();
     window.location.assign(strContaceForm)
+    // clearForm();
 
 }
-function clearForm(){
+function clearForm() {
     $('#FormEmailInput1').val('');
     $('#FormSubjectTextarea1').val('');
     $('#FormMessageTextarea1').va('');
