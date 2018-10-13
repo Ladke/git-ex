@@ -80,9 +80,9 @@ var gProjs = [{
     }, {
         id: "wheelchair",
         name: "Wheelchair",
-        title: "Extreem-sports wheelchair",
+        title: "extreme-sports wheelchair",
         desc: `comming soon..`,
-        img: "img/portfolio/small/wheelchair.jpg",
+        img: "img/portfolio/small/wheelchair.png",
         url: 0,
         date: "June 2007",
         publishedAt: 1448693940000,
