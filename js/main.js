@@ -17,7 +17,7 @@ var gProjs = [{
     name: "Minesweeper",
     title: "Minesweeper online game",
     desc: "Play beginner, intermediate and expert games of Minesweeper",
-    img: "img/portfolio/small/minesweeper.jpg",
+    img: "img/portfolio/small/minesweep.jpg",
     url: "proj/minesweeper/index.html",
     date: "september 2018",
     publishedAt: 1448693940000,
