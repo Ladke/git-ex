@@ -62,6 +62,10 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: #fed136;
 }
+.form-group{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .offcanvas-btn {
     z-index: 100000;
     position: fixed;
@@ -85,7 +89,7 @@ body {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: red;
+    background: steelblue;
     width: 30vw;
     left: -30vw;
     transition: all 0.3s ease;
@@ -301,7 +305,7 @@ header.masthead .intro-text .intro-heading {
 }
 .portfolio-modal .modal-content {
     min-height: 100%;
-    padding: 100px 0;
+    padding: 30px 0;
     text-align: center;
     border: none;
     border-radius: 0;
@@ -310,16 +314,16 @@ header.masthead .intro-text .intro-heading {
     box-shadow: none;
 }
 .portfolio-modal .modal-content h2 {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 15px;
 }
 .portfolio-modal .modal-content p {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .portfolio-modal .modal-content p.item-intro {
     font-size: 16px;
     font-style: italic;
-    margin: 20px 0 30px;
+    margin: 20px ;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .portfolio-modal .modal-content ul.list-inline {
@@ -327,7 +331,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 30px;
 }
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .portfolio-modal .modal-content button {
     cursor: pointer;
@@ -349,7 +353,7 @@ header.masthead .intro-text .intro-heading {
     
     z-index: 1051;
     width: 1px;
-    height: 75px;
+    height: 50px;
     margin-left: 35px;
     /* IE 9 */
     
@@ -363,7 +367,7 @@ header.masthead .intro-text .intro-heading {
     
     z-index: 1052;
     width: 1px;
-    height: 75px;
+    height: 50px;
     /* IE 9 */
     
     -webkit-transform: rotate(90deg);
