@@ -77,7 +77,19 @@ var gProjs = [{
     category: "Industrial Design",
     labels: ["plastic",
         "industrial design"],
-}]
+    }, {
+        id: "wheelchair",
+        name: "Wheelchair",
+        title: "Extreem-sports wheelchair",
+        desc: `comming soon..`,
+        img: "img/portfolio/small/wheelchair.jpg",
+        url: 0,
+        date: "June 2007",
+        publishedAt: 1448693940000,
+        category: "Industrial Design",
+        labels: ["plastic",
+            "industrial design"],
+    }]
 
 initPage()
 
