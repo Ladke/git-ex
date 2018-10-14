@@ -17,7 +17,7 @@ var gProjs = [{
         name: "Book Store",
         title: "Book Store Managing tool",
         desc: "coming soon",
-        img: "img/portfolio/small/minesweep.jpg",
+        img: "img/portfolio/small/bookstore.jpg",
         url: "/git-ex/proj/Book_shop/index.html",
         date: "september 2018",
         publishedAt: 1448693940000,
