@@ -12,6 +12,18 @@ var gProjs = [{
     category: "Industrial Design",
     labels: ["funiture",
         "kids", "design"],
+    }, {
+        id: "bookstore",
+        name: "Book Store",
+        title: "Book Store Managing tool",
+        desc: "coming soon",
+        img: "img/portfolio/small/minesweep.jpg",
+        url: "/git-ex/proj/Book_shop/index.html",
+        date: "september 2018",
+        publishedAt: 1448693940000,
+        category: "Web-Dev",
+        labels: ["Matrixes",
+            "keyboard events"],
 }, {
     id: "minesweeper",
     name: "Minesweeper",

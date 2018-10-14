@@ -1,0 +1,31 @@
+
+/* @import url(../lib/bs4/css/bootstrap.min.css); */
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px auto;
+    /* color: var(--danger); */
+}
+
+.container{
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.thumbnail{
+    width: 30px;
+}
+
+.card-img-top{
+width: 200px;
+}
+
+.header-title:hover{
+cursor: pointer;
+}
+
+.header-price:hover{
+    cursor: pointer;
+    }
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+
+    <h1>Bobo's big Book Shop</h1>
+    <div class="container">
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal" onclick="onAddNewBook()">Add
+            a book</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id#</th>
+                    <th class="header-title" scope="col" onclick="sortByName()">Title</th>
+                    <th class="header-price" scope="col" onclick="sortByPrice()">Price</th>
+                    <th scope="col">Cover</a></th>
+                    <th scope="col">Actions</a></th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="lib/bs4/js/bootstrap.bundle.min.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-main.js"></script>
+
+   
+</body>
+
+</html>
