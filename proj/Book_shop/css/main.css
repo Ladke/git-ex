@@ -1,6 +1,8 @@
 
 /* @import url(../lib/bs4/css/bootstrap.min.css); */
-
+.container.rtl{
+    direction: rtl;
+}
 h1 {
     text-align: center;
     text-transform: capitalize;
@@ -16,9 +18,6 @@ h1 {
 .thumbnail{
     width: 30px;
 }
-.lang{
-    width:  200px;
-}
 
 .card-img-top{
 width: 200px;
@@ -32,3 +31,21 @@ cursor: pointer;
     cursor: pointer;
     }
 
+.btn-addBook.heb{
+    float: right;
+    /* margin: 0 20px; */
+}
+.lang{
+    width:  200px;
+    margin: 0 20px;
+}
+
+.lang.heb{
+    float: right;
+    margin: 0 20px;
+
+}
+
+table.heb{
+    text-align: right
+}

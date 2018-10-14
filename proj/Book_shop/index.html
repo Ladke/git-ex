@@ -15,28 +15,28 @@
 
 <body onload="init()">
 
-    <h1>Bobo's Book Shop</h1>
+    <h1 data-trans="storeHeader">Bobo's Book Shop</h1>
     <div class="container">
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal" onclick="onAddNewBook()">Add
+        <button type="button" data-trans="addBook" class="btn btn-primary btn-addBook" data-toggle="modal" data-target="#infoModal" onclick="onAddNewBook()">Add
             a book</button>
            
-            <select class="lang custom-select" >
-                <option selected>Language</option>
+            <select class="lang custom-select" onchange="onSetLang(this.value)">
+                <option selected value="en">Language</option>
                 <option value="en">English</option>
                 <option value="he">עברית</option>
-                <option value="fr">French</option>
+                <!-- <option value="fr">French</option> -->
             </select>
         <!-- </div> -->
 
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">id#</th>
-                    <th class="header-title" scope="col" onclick="sortByName()">Title</th>
-                    <th class="header-price" scope="col" onclick="sortByPrice()">Price</th>
-                    <th scope="col">Cover</a></th>
-                    <th scope="col">Actions</a></th>
+                    <th scope="col" data-trans="bookId" >Book Id</th>
+                    <th class="header-title" data-trans="bookTitle" scope="col" onclick="sortByName()">Title</th>
+                    <th class="header-price" data-trans="bookPrice" scope="col" onclick="sortByPrice()">Price</th>
+                    <th scope="col" data-trans="bookCover">Cover</a></th>
+                    <th scope="col" data-trans="bookActions">Actions</a></th>
                 </tr>
             </thead>
             <tbody>
@@ -68,6 +68,7 @@
     <script src="lib/bs4/js/bootstrap.bundle.min.js"></script>
     <script src="js/util-service.js"></script>
     <script src="js/book-service.js"></script>
+    <script src="js/i18n-service.js"></script>
     <script src="js/book-main.js"></script>
 
 
