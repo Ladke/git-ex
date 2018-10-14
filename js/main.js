@@ -18,7 +18,7 @@ var gProjs = [{
         title: "Book Store Managing tool",
         desc: "coming soon",
         img: "img/portfolio/small/bookstore.jpg",
-        url: "/git-ex/proj/Book_shop/index.html",
+        url: "proj/Book_shop/index.html",
         date: "september 2018",
         publishedAt: 1448693940000,
         category: "Web-Dev",
@@ -30,7 +30,7 @@ var gProjs = [{
     title: "Minesweeper online game",
     desc: "Play beginner, intermediate and expert games of Minesweeper",
     img: "img/portfolio/small/minesweep.jpg",
-    url: "/git-ex/proj/minesweeper/index.html",
+    url: "proj/minesweeper/index.html",
     date: "september 2018",
     publishedAt: 1448693940000,
     category: "Web-Dev",
@@ -143,12 +143,12 @@ function renderProjs() {
 
 function updateModal(projId) {
     var proj = getProjById(projId)
-    // var loc = window.location.hostname;
     var linkBtn = `<span></span>`;
-    // if (proj.url) linkBtn = `<li onclick="window.open('${loc+proj.url}')">
-    if (proj.url) linkBtn = `<li onclick="window.open('${proj.url}')">
-        <button type="button" class="btn btn-secondary">link to project</button>
-    </li>`
+    if (proj.url) linkBtn = `<li>
+                                <a href="${proj.url}" class="btn btn-secondary" target="_blank">
+                                    link to project
+                                </a>
+                            </li>`
     var strHtml = '';
     strHtml += `
         <div class="modal-dialog">

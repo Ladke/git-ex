@@ -6,20 +6,29 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="lib/jquery/jquery.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Book Store</title>
 </head>
 
 <body onload="init()">
 
-    <h1>Bobo's big Book Shop</h1>
+    <h1>Bobo's Book Shop</h1>
     <div class="container">
 
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal" onclick="onAddNewBook()">Add
             a book</button>
+           
+            <select class="lang custom-select" >
+                <option selected>Language</option>
+                <option value="en">English</option>
+                <option value="he">עברית</option>
+                <option value="fr">French</option>
+            </select>
+        <!-- </div> -->
+
         <table class="table">
             <thead>
                 <tr>
@@ -54,14 +63,14 @@
         </div>
     </div>
 
-   
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="lib/bs4/js/bootstrap.bundle.min.js"></script>
     <script src="js/util-service.js"></script>
     <script src="js/book-service.js"></script>
     <script src="js/book-main.js"></script>
 
-   
+
 </body>
 
 </html>
