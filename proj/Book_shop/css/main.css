@@ -1,8 +1,18 @@
 
 /* @import url(../lib/bs4/css/bootstrap.min.css); */
+body {
+    background: url("../img/bg-type.jpg"); 
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}.container {
+    background-color: rgba(221, 215, 208, 0.623);
+}
+
 .container.rtl{
     direction: rtl;
 }
+
 h1 {
     text-align: center;
     text-transform: capitalize;
@@ -48,4 +58,26 @@ cursor: pointer;
 
 table.heb{
     text-align: right
+}
+
+.btn-primary{ 
+    background-color: #34464E;
+    border: none;
+
+}
+.btn-info{
+    background-color: #5A7A89;
+    border: none;
+
+}
+
+.btn-warning{
+    background-color: #749DB0;
+    border: none;
+
+}
+.btn-danger{
+    background-color: #BA1200;
+    border: none;
+
 }

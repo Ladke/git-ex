@@ -15,24 +15,25 @@
 
 <body onload="init()">
 
-    <h1 data-trans="storeHeader">Bobo's Book Shop</h1>
     <div class="container">
+        <h1 data-trans="storeHeader">Bobo's Book Shop</h1>
 
-        <button type="button" data-trans="addBook" class="btn btn-primary btn-addBook" data-toggle="modal" data-target="#infoModal" onclick="onAddNewBook()">Add
+        <button type="button" data-trans="addBook" class="btn btn-primary btn-addBook" data-toggle="modal" data-target="#infoModal"
+            onclick="onAddNewBook()">Add
             a book</button>
-           
-            <select class="lang custom-select" onchange="onSetLang(this.value)">
-                <option selected value="en">Language</option>
-                <option value="en">English</option>
-                <option value="he">עברית</option>
-                <!-- <option value="fr">French</option> -->
-            </select>
+
+        <select class="lang custom-select" onchange="onSetLang(this.value)">
+            <option selected value="en">Language</option>
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+            <!-- <option value="fr">French</option> -->
+        </select>
         <!-- </div> -->
 
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col" data-trans="bookId" >Book Id</th>
+                    <th scope="col" data-trans="bookId">Book Id</th>
                     <th class="header-title" data-trans="bookTitle" scope="col" onclick="sortByName()">Title</th>
                     <th class="header-price" data-trans="bookPrice" scope="col" onclick="sortByPrice()">Price</th>
                     <th scope="col" data-trans="bookCover">Cover</a></th>
